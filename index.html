@@ -1,4 +1,5 @@
-<header>
+<body>
+  <header>
   <h1>
     My long holidays
   </h1>
@@ -6,7 +7,7 @@
     Summer 2023/24
   </h2>
 </header>
-
+<main>
 <ul>
   <li>
     I spent it in Japan all though the holidays. So there was actually <span class="line">winter</span>
@@ -19,7 +20,13 @@
 <h3>
   What I did:
 </h3>
+<div>
+  <img src="">
 
+  <img src="summer" alt="summer2023">
+
+  <img src="">
+  </div>
 <ul>
 
   <li>
@@ -28,19 +35,32 @@
 
   <li>
     Went to the Christmas and New year concert
-  </li>
+    </li>
 
   <li>
     Made cakes
   </li>
 
 </ul>
+</main>
 
+<fotter>
+  This site was written by Yuna.
+</fotter>
+</body>
 
 <style>
+  body{
+    display: grid;
+    grid: " h    m    .  " auto
+          " .    m    .  " auto
+          " .    m    f  " auto
+          / auto auto auto;
+        }
   header {
     font-family: 'Protest Riot', sans-serif;
     font-size: xx-large;
+    grid-area: h;
   }
 
   h1:hover {
@@ -83,4 +103,20 @@
     font-weight: 400;
     font-style: normal;
     }
+    main{grid-area: m;}
+fotter{grid-area: f;}
+    .summer{
+      border-radius: 50%;
+filter: grayscale(100%);
+filter: saturate(50%);
+filter: sepia(100%);
+    
+}
+img{height:10rem;}
+
+div{display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
 </style>
