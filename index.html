@@ -10,7 +10,7 @@
 <main>
 <ul>
   <li>
-    I spent it in Japan all though the holidays. So there was actually <span class="line">winter</span>
+    I spent it in Japan all though the holidays. So there was actually <span class="line">winter⛄❄</span>
   </li>
   <li>
     I met my friends, went skiing and ate Japanese food a lot.
@@ -21,10 +21,8 @@
   What I did:
 </h3>
 <div>
-  <img src="">
-
-  <img src="summer" alt="summer2023">
-
+  <img src="frome-airplane.png" alt="Mt,Fuji">
+    <img src="summer" alt="summer2023">
   <img src="">
   </div>
 <ul>
@@ -45,17 +43,17 @@
 </main>
 
 <fotter>
-  This site was written by Yuna.
+  ©Yuna 2024
 </fotter>
 </body>
 
 <style>
   body{
     display: grid;
-    grid: " h    m    .  " auto
-          " .    m    .  " auto
-          " .    m    f  " auto
-          / auto auto auto;
+    grid: " h    h     .  " 2em
+          " m    m     m  " auto
+          " m    m     f  " 1em
+          / 3fr  4fr   1fr;
         }
   header {
     font-family: 'Protest Riot', sans-serif;
@@ -73,6 +71,9 @@
     font-family: 'Protest Riot', sans-serif;
     margin-left: 10%;
     color: lightblue;
+    font-size: 50;
+    margin-top: 3%;
+    margin-left: 3%;
   }
 
   h2 {
@@ -80,8 +81,7 @@
   }
 
   .line {
-    text-decoration: underline 3px solid yellow;
-  }
+    text-decoration: underline 3px solid lightblue;  }
 
   h3 {
     font-family: 'Protest Riot', sans-serif;
@@ -98,13 +98,15 @@
     font-family: 'Protest Riot', sans-serif;
     font-size: medium;
     color: black;
-    text-align: center;
+    text-align: left;
     margin-left: 10%;
     font-weight: 400;
     font-style: normal;
     }
     main{grid-area: m;}
-fotter{grid-area: f;}
+
+footer{grid-area: f;}
+
     .summer{
       border-radius: 50%;
 filter: grayscale(100%);
@@ -112,7 +114,8 @@ filter: saturate(50%);
 filter: sepia(100%);
     
 }
-img{height:10rem;}
+img{height:15rem;
+margin-left: 0;}
 
 div{display: flex;
 flex-direction: column;
